@@ -1,0 +1,17 @@
+server:
+  port: 8772
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_USERS_HOST:localhost}:3306/spring_security?charSet=LATIN1
+    username: ${MYSQL_USER_USERNAME:root}
+    password: ${MYSQL_USER_PASSWORD:@EdwardM72}
+    initialization-mode: always
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
