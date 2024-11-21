@@ -5,8 +5,8 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_USERS_HOST:localhost}:3306/spring_security?charSet=LATIN1
-    username: ${MYSQL_USER_USERNAME:root}
-    password: ${MYSQL_USER_PASSWORD:@EdwardM72}
+    username: ${MYSQL_USER_USERNAME}
+    password: ${MYSQL_USER_PASSWORD}
     initialization-mode: always
   jpa:
     hibernate:
